@@ -1,0 +1,19 @@
+{
+  "name": "svg-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "svg-to-react": "npx @svgr/cli --template typescript.template.js --ext ts --out-dir ./dist ./svgs",
+    "build": "rm -rf dist && npm run svg-to-react && npm run barrels",
+    "barrels": "npx barrelsby -d ./dist -q -s"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/cli": "4.2.0",
+    "barrelsby": "2.0.0",
+    "prettier": "1.16.4"
+  }
+}

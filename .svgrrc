@@ -1,0 +1,5 @@
+{
+  "icon": true,
+  "prettier": true,
+  "svgo": true
+}
